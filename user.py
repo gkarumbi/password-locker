@@ -19,16 +19,3 @@ class User:
         """
 
         User.user_list.append(self)
-
-    def delete_user(self):
-        User.user_list.remove(self)
-
-
-    @classmethod
-    def search_by_username(cls,user_name):
-        """
-        Search by username
-        """
-        for user in user_list:
-            if user.user_name == user_name:
-                return user
