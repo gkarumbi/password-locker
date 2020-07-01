@@ -18,7 +18,11 @@ class Credentials:
         """
         Credentials.password_list.append(self)
 
-    
+    def deletePassword(self):
+        """
+        Store password method , stores passwords into password list
+        """
+        Credentials.password_list.remove(self)
 
 
 if __name__ = "__main__":
