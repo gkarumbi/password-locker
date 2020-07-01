@@ -22,3 +22,10 @@ def save_user_credentials(userCreds):
 def search_user_byname(user_name):
     return User.search_user(user_name)
 
+def createCredentials(account,email,password):
+    """
+    creates credential objects
+    """
+    new_creds = Credentials(account,email,password)
+    return new_creds
+
