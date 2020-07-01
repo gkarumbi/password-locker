@@ -20,10 +20,22 @@ class Credentials:
 
     def deletePassword(self):
         """
-        Store password method , stores passwords into password list
+        delete password method , deletes passwords into password list
         """
         Credentials.password_list.remove(self)
 
+    @classmethod
+    def searchByAccount(cls, account):
+        """
+        search for accounts
+        """
+        for Cred in cls.password_list:
+            if Cred.account == account:
+                return Cred
+
+        # confirming details
+
+   
 
 if __name__ = "__main__":
     main()
