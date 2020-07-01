@@ -54,10 +54,6 @@ class Credentials:
         """
         return cls.password_list
 
-    def main():
-        print("Hey there, Welcome")
+    
 
 
-
-if __name__ == "__main__":
-    main()
