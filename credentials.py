@@ -1,4 +1,4 @@
-from user import user
+from user import User
 
 class Credentials:
     """
@@ -55,13 +55,9 @@ class Credentials:
         return cls.password_list
 
     def main():
+        print("Hey there, Welcome")
 
 
-if __name__ = "__main__":
+
+if __name__ == "__main__":
     main()
-
-    def createPassword(password):
-
-        return password
-
-    
