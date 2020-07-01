@@ -1,6 +1,9 @@
 from credentials import credentials
 from user import User
 
+"""
+This where we shall be running our app
+"""
 
 def createUserAccount():
     """
@@ -28,4 +31,19 @@ def createCredentials(account,email,password):
     """
     new_creds = Credentials(account,email,password)
     return new_creds
+
+def save_credentials(creds):
+    """
+    Display our credentials
+    """
+    creds.save_credentials()
+
+def show_credentials():
+    
+    """displays all our saved credentials
+    """
+    return Credentials.displayCrendentials()
+
+
+
 
