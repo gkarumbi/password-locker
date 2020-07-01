@@ -1,4 +1,4 @@
-from credentials import credentials
+from credentials import Credentials
 from user import User
 
 """
@@ -51,6 +51,22 @@ def search_by_account(account):
 def delete_user_credentials(account):
     account. delete_user_credentials()
 
+def main():
+    print("Hey there welcome to our Login app")
+    print("Please enter your name")
+
+    name = input()
+
+    print(name +" Please use the following short codes: 'ca' to create account, 'si' to sign in and 'x' to exit" )
+
+    while True:
+
+        input_code = input().lower()
+        
+
+
+    if __name__ == "__main__":
+        main()
 
 
 
