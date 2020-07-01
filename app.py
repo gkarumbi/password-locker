@@ -9,7 +9,12 @@ def createUserAccount():
     new_user = User(user_name,email,password)
     return new_user
 
-def save_user():
+def save_new_user(user):
     """
-    Saves users
+    Saves new users
     """
+    user.save_new_user()
+
+def save_user_credentials(userCreds):
+    
+    userCreds.save_user_credentials()
