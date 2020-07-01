@@ -48,6 +48,9 @@ def search_by_account(account):
 
     return Credentials.searchByAccount(account)
 
+def delete_user_credentials(account):
+    account. delete_user_credentials()
+
 
 
 
