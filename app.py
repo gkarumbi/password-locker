@@ -44,6 +44,13 @@ def show_credentials():
     """
     return Credentials.displayCrendentials()
 
+def search_by_account(account):
+
+    return Credentials.searchByAccount(account)
+
+
+
+
 
 
 
