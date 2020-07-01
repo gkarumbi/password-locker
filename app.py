@@ -16,5 +16,9 @@ def save_new_user(user):
     user.save_new_user()
 
 def save_user_credentials(userCreds):
-    
+
     userCreds.save_user_credentials()
+
+def search_user_byname(user_name):
+    return User.search_user(user_name)
+
