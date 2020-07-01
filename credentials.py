@@ -33,9 +33,22 @@ class Credentials:
             if Cred.account == account:
                 return Cred
 
-        # confirming details
+        
 
-   
+    @classmethod
+    def userAccount_exists(cls, account):
+        """
+        check if user account exists
+        """
+        for Cred in cls.password_list:
+            if Cred.account == account:
+                return True
+            return False
+    
+    #Display user Credentials
+
+    
+
 
 if __name__ = "__main__":
     main()
