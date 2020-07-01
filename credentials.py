@@ -47,7 +47,12 @@ class Credentials:
     
     #Display user Credentials
 
-    
+    @classmethod
+    def displayCredentials(cls):
+        """
+        Function that returns all credentials
+        """
+        return cls.password_list
 
 
 if __name__ = "__main__":
